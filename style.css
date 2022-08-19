@@ -1,0 +1,186 @@
+.daysHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3rem;
+  gap: 5px;
+}
+
+.timeSlots {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  background-color: #eceff1;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.headings {
+  background-color: #3f51b5;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 9px;
+}
+
+.timeSlotsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 76vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.timeSlotsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer {
+  // height: 100vh;
+  // background-color: #f7f4f4;
+  // overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #3f51b5;
+  padding: 1rem;
+  margin: 0 3rem 1rem 3rem;
+  border-radius: 5px;
+}
+
+.headerDate {
+  display: flex;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-ctems: center;
+}
+
+.disabledTimeSlots {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  background-color: #eceff1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.disabledContainer {
+  cursor: not-allowed;
+}
+
+.disabledDayColumn {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.disabledDayColumnMain {
+  cursor: not-allowed;
+}
+
+.activeTimeSlot {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  background-color: #1565c0;
+  border-radius: 5px;
+  color: white;
+}
+
+.buttons {
+  height: 2rem;
+  width: 5rem;
+  background-color: #3144ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .mainContainer {
+  }
+
+  .daysHeader {
+    margin: 0.5rem 0 0 0;
+    gap: 0px;
+    padding: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .daysHeader::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    gap: 0rem;
+    margin: 0;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .headerDate {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .timeSlots {
+    width: 2.5rem;
+    padding: 3px 0px;
+    font-size: 0.6rem;
+  }
+  .activeTimeSlot {
+    padding: 3px 0px;
+    background-color: #304ffe;
+    font-size: 0.6rem;
+    width: 2.5rem;
+  }
+
+  .headings {
+    padding: 3px;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 2rem;
+    overflow-x: auto;
+    height: 3rem;
+  }
+  .timeSlotsContainer {
+    gap: 3px;
+  }
+
+  .buttons {
+    height: 1.5rem;
+    width: 2rem;
+    font-size: 0.6rem;
+  }
+
+  .disabledTimeSlots {
+    width: 2.5rem;
+    padding: 3px 0px;
+    font-size: 0.6rem;
+  }
+}
